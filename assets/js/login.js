@@ -72,6 +72,7 @@ $(function () {
                 // 跳转到后台
                 // console.log(res.token)
                 //Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ODkyLCJ1c2VybmFtZSI6IlIiLCJwYXNzd29yZCI6IiIsIm5pY2tuYW1lIjoiIiwiZW1haWwiOiIiLCJ1c2VyX3BpYyI6IiIsImlhdCI6MTY2MzY2MDE0NywiZXhwIjoxNjYzNjk2MTQ3fQ.LfeYUz3zN0IuyXBvCIQszurqyYYCTaw5qw0le6NOcKQ
+                localStorage.setItem('token', res.token)
                 location.href = '/index.html';
             }
         })
