@@ -15,7 +15,7 @@ $(function () {
     // 1.3 创建裁剪区域 将配置项传进去
     $image.cropper(options)
 
-    // 未上传按钮绑定点击事件
+    // 为上传按钮绑定点击事件
     $('#btnChooseImage').on('click', function () {
         $('#file').click()
     })
@@ -60,9 +60,6 @@ $(function () {
                 layui.layer.msg('更换头像成功! ')
                 window.parent.getUserInfo()
             }
-
         })
-
-
     })
 })

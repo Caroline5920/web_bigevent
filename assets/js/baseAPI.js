@@ -19,7 +19,7 @@ $.ajaxPrefilter(function (options) {
     // 全局挂载complete回调函数 
     // 问题:为什么不挂在在有权限的接口下面,就像请求头那样?--
     options.complete = function (res) {
-        console.log(res)
+        // console.log(res)
         // 在complete回调函数中,可以使用res.responseJSON拿到服务器响应回来的数据(成功||失败)
         if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
             // 1.强制清空token
